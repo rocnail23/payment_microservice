@@ -10,7 +10,7 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule, {
     rawBody: true
   });
-
+  // GOLA 3
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
